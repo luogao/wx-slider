@@ -1,0 +1,36 @@
+.move-wrap {
+  width: 100vw;
+  background: #ccc;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  height: 50px;
+}
+
+.move-item-block {
+  background: #fff;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  border-top: 1px solid #ccc;
+  position: absolute;
+  transform: translateX(0);
+}
+.move-item-block.is-move-end{
+   transition: transform .2s ease; 
+}
+
+.move-item-content {
+  width: 100vw;
+  line-height: 50px;
+}
+
+.move-item-action {
+  white-space: nowrap;
+  background: red;
+  color: #fff;
+  min-width: 120rpx;
+  text-align: center;
+  line-height: 50px;
+}

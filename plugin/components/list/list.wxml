@@ -1,0 +1,8 @@
+<view wx:for="{{list}}" wx:key="name" class="move-wrap" >
+  <view style='transform: translateX({{item.left}}px)' class="move-item-block {{!item.isTouchMoveEnd? '':'is-move-end'}}" data-index="{{index}}" catchtouchstart="touchStart" catchtouchmove="touchMove" catchtouchend="touchEnd">
+    <view class='move-item-content'>
+      {{item.name}}:{{item.price}}
+    </view>
+    <view class='move-item-action'>删除</view>
+  </view>
+</view>
