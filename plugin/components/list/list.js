@@ -58,8 +58,8 @@ Component({
           list: _list,
           dis: dis
         })
-      } else if (dis > (this.data.actionBlock + this.data.outOfBound)) {
-        _list[index].left = -(this.data.actionBlock + this.data.outOfBound)
+      } else if (dis > this.data.actionBlock) {
+        _list[index].left = -((this.data.actionBlock) + ((dis - this.data.actionBlock) * .3))
         this.setData({
           list: _list,
           dis: dis
